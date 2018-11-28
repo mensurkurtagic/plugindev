@@ -1,0 +1,300 @@
+@media ( min-width: 1440px){
+  .shop--navigation{
+    .navigation--list{
+      .navigation--entry{
+        .btn{
+          .icon--heart{
+            color: @iconLikedColor;
+          }
+
+          .icon--basket{
+            color: @iconCartColor;
+          }
+
+          .icon--account{
+            color: @iconAccColor;
+          }
+
+          /*display text or don't display text*/
+          .account--display{
+            display: @accName;
+            vertical-align: sub;
+          }
+          .cart--amount{
+            display: @cartText;
+            vertical-align: sub;
+          }
+        }
+
+        .btn:hover{
+          border-color: @borderColorhover;
+        }
+      }
+    }
+  }
+  /* Make buttons round with custom border radius */
+  .shop--navigation{
+    .entry--cart{
+      .cart--link{
+        width: @buttonCartWidth;
+        padding: @buttonCartPadding;
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+
+    .entry--notepad{
+      .btn{
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+
+    .entry--account{
+      .account--link{
+        width: @buttonWidth;
+        padding: @accButtonPadding;
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+  }
+}
+
+@media ( min-width: @tabletLandscapeViewportWidth) {
+  .shop--navigation{
+    .navigation--list{
+      .navigation--entry{
+        .btn{
+          .icon--heart{
+            color: @iconLikedColor;
+          }
+
+          .icon--basket{
+            color: @iconCartColor;
+          }
+
+          .icon--account{
+            color: @iconAccColor;
+          }
+
+          /*display text or don't display text*/
+          .account--display{
+            display: none;
+          }
+          .cart--amount{
+            display: none;
+          }
+        }
+      }
+    }
+
+    .entry--cart{
+      .cart--link{
+        width: @buttonCartWidth;
+        padding: 0 10px 0 10px;
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+
+    .entry--notepad{
+      .btn{
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+
+    .entry--account{
+      .account--link{
+        width: @buttonWidth;
+        padding: 0 10px 0 10px;
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+  }
+}
+
+@media ( min-width: @tabletViewportWidth) {
+  .shop--navigation{
+    .navigation--list{
+      .navigation--entry{
+        .btn{
+          .icon--heart{
+            color: @iconLikedColor;
+          }
+
+          .icon--basket{
+            color: @iconCartColor;
+          }
+
+          .icon--account{
+            color: @iconAccColor;
+          }
+
+          /*display text or don't display text*/
+          .account--display{
+            display: @accName;
+            vertical-align: sub;
+          }
+          .cart--amount{
+            display: @cartText;
+            vertical-align: sub;
+          }
+        }
+      }
+    }
+
+    .entry--cart{
+      .cart--link{
+        width: @buttonCartWidth;
+        padding: @buttonCartPadding;
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+
+    .entry--notepad{
+      .btn{
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+
+    .entry--account{
+      .account--link{
+        width: @buttonWidth;
+        padding: @accButtonPadding;
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+  }
+}
+
+@media ( min-width: @phoneLandscapeViewportWidth) and ( max-width: @tabletViewportWidth) {
+  .shop--navigation{
+    .navigation--list{
+      .navigation--entry{
+        .btn{
+          .icon--heart{
+            color: @iconLikedColor;
+          }
+
+          .icon--basket{
+            color: @iconCartColor;
+          }
+
+          .icon--account{
+            color: @iconAccColor;
+          }
+
+          /*display text or don't display text*/
+          .account--display{
+            display: none;
+          }
+          .cart--amount{
+            display: none;
+          }
+        }
+      }
+    }
+
+    .entry--cart{
+      .cart--link{
+        width: @buttonCartWidth;
+        padding:  0 10px 0 10px;
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+
+    .entry--notepad{
+      .btn{
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+
+    .entry--account{
+      .account--link{
+        width: @buttonWidth;
+        padding:  0 10px 0 10px;
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+  }
+}
+
+@media ( max-width: @phoneLandscapeViewportWidth) {
+  .shop--navigation{
+    .navigation--list{
+      .navigation--entry{
+        .btn{
+          .icon--heart{
+            color: @iconLikedColor;
+          }
+
+          .icon--basket{
+            color: @iconCartColor;
+          }
+
+          .icon--account{
+            color: @iconAccColor;
+          }
+
+          /*display text or don't display text*/
+          .account--display{
+            display: none;
+          }
+          .cart--amount{
+            display: none;
+          }
+        }
+      }
+    }
+
+    .entry--cart{
+      .cart--link{
+        width: @buttonCartWidth;
+        padding: 0 10px 0 10px;
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+
+    .entry--notepad{
+      .btn{
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+
+    .entry--account{
+      .account--link{
+        width: @buttonWidth;
+        padding: 0 10px 0 10px;
+        border-radius: @radius;
+        border-color: @borderColor;
+        margin: 1.5px;
+      }
+    }
+  }
+}
+

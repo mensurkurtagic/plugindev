@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+
+        <element type="select"  required="true"  scope="locale">
+            <name>blocks-order</name>
+            <label lang="de">Reihenfolge der Blöcke</label>
+            <label lang="en">Blocks order</label>
+            <value>Choose from the list..</value>
+            <store>
+                <option>
+                    <value>FirstCombo</value>
+                    <label lang="en">Liked Items - My Account - Cart</label>
+                    <label lang="de">Merkzettel - Mein Konto - Warenkorb</label>
+                </option>
+
+                <option>
+                    <value>SecondCombo</value>
+                    <label lang="en">My Account - Liked Items - Cart</label>
+                    <label lang="de">Mein Konto - Merkzettel - Warenkorb</label>
+                </option>
+                <option>
+
+                    <value>ThirdCombo</value>
+                    <label lang="en">Liked Items - Cart - My Account</label>
+                    <label lang="de">Merkzettel - Warenkorb - Mein Konto</label>
+                </option>
+                <option>
+
+                    <value>FourthCombo</value>
+                    <label lang="en">Cart - Liked Items - My Account</label>
+                    <label lang="de">Warenkorb - Merkzettel - Mein Konto</label>
+                </option>
+                <option>
+
+                    <value>FifthCombo</value>
+                    <label lang="en">Cart - My Account - Liked Items</label>
+                    <label lang="de">Warenkorb - Mein Konto - Merkzettel</label>
+                </option>
+                <option>
+
+                    <value>SixthCombo</value>
+                    <label lang="en">My Account - Cart - Liked Items</label>
+                    <label lang="de">Mein Konto - Warenkorb - Merkzettel</label>
+                </option>
+            </store>
+        </element>
+
+        <!-- show/hide text -->
+        <element type="boolean" scope="locale" required="true">
+            <name>show-name</name>
+            <label lang="en">Hide account name</label>
+        </element>
+        <element type="boolean" scope="locale" required="true">
+            <name>show-price</name>
+            <label lang="en">Hide cart amount</label>
+        </element>
+
+        <!-- config options for style -->
+        <element type="color" required="true" scope="locale">
+            <name>style-likedicon-elements</name>
+            <label lang="en">Color of "Liked Items" icon</label>
+            <label lang="de">Farbe des Symbols "Merkzettel".</label>
+            <value>#d9400b</value>
+        </element>
+        <element type="color" required="true" scope="locale">
+            <name>style-carticon</name>
+            <label lang="en">Color of "Cart" icon</label>
+            <label lang="de">Farbe des Symbols "Warenkorb".</label>
+            <value>#d9400b</value>
+        </element>
+        <element type="color" required="true" scope="locale">
+            <name>style-accicon</name>
+            <label lang="en">Color of "Account" icon</label>
+            <label lang="de">Farbe des Symbols "Mein Konto".</label>
+            <value>#d9400b</value>
+        </element>
+
+
+        <!-- border radius of buttons -->
+        <element type="number" required="true" scope="locale">
+            <name>border-radius</name>
+            <label lang="en">Buttons' border radius in pixels</label>
+            <label lang="de">Randradius der Schaltflächen in Pixeln</label>
+            <value>5</value>
+        </element>
+        <!-- border color of buttons -->
+        <element type="color" required="true" scope="locale">
+            <name>border-color</name>
+            <label lang="en">Border color</label>
+            <label lang="de">Randlinie Farbe</label>
+            <value>#d9400b</value>
+        </element>
+        <!-- border color on hover of buttons -->
+        <element type="color" required="true" scope="locale">
+            <name>border-color-hover</name>
+            <label lang="en">Border color on hover</label>
+            <label lang="de">Randlinie Farbe beim Hover</label>
+            <value>#d9400b</value>
+        </element>
+    </elements>
+</config>
