@@ -17,6 +17,12 @@
             <argument id="service_container" type="service"/>
             <tag name="shopware.event_subscriber"/>
         </service>
+
+        <!--subscribe js files-->
+        <service class="passwordStrength\Subscriber\Javascript" id="password_strength.subscriber.javascript">
+            <argument id="service_container" type="service"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
     </services>
 
 </container>
