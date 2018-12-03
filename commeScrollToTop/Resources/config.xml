@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+
+          <element type="select"  required="true"  scope="locale">
+        <name>arrow-type</name>
+        <label lang="de">Pfeil-Typ</label>
+        <label lang="en">Icon Type</label>
+        <value>chevron</value>
+          <store>
+              <option>
+                  <value>chevron</value>
+                  <label lang="de">Chevron</label>
+                  <label lang="en">Chevron</label>
+              </option>
+              <option>
+                  <value>chevron_bar</value>
+                  <label lang="de">Chevron Bar</label>
+                  <label lang="en">Chevron Bar</label>
+              </option>
+              <option>
+                  <value>triangle</value>
+                  <label lang="en">Triangle</label>
+                  <label lang="de">Triangle</label>
+              </option>
+              <option>
+                  <value>triangle_bar</value>
+                  <label lang="en">Triangle Bar</label>
+                  <label lang="de">Triangle Bar</label>
+              </option>
+              <option>
+                  <value>chevarr</value>
+                  <label lang="en">Chevron array</label>
+                  <label lang="de">Chevron array</label>
+              </option>
+              <option>
+                  <value>chevarr_bar</value>
+                  <label lang="en">Icon Bar</label>
+                  <label lang="de">Icon Bar</label>
+              </option>
+              <option>
+                  <value>arrow</value>
+                  <label  lang="en">Arrow</label>
+                  <label lang="de">Arrow</label>
+              </option>
+              <option>
+                  <value>arrow_bar</value>
+                  <label  lang="en">Arrow Bar</label>
+                  <label lang="de">Arrow Bar</label>
+              </option>
+          </store>
+           </element>
+                  <element type="color"  required="true"  scope="locale" >
+                      <name>arrow-color</name>
+                      <label  lang="en">Color Type</label>
+                    <label  lang="de" >Farbe</label>
+                    <value>#ffffff</value>
+              </element>
+              <element type="color" scope="locale" >
+                  <name>arrow-color-hover</name>
+                  <label lang="en" >Arrow color on Mouse Hover</label>
+                  <label  lang="de">Pfeil-Farbe bei Hover</label>
+              </element>
+           <element type="color"  required="true"  scope="locale" >
+                <name>background-color</name>
+                <label  lang="en">Background-Color</label>
+                <label  lang="de">Hintergrund-Farbe</label>
+                <value>#37a000</value>
+            </element>
+          <element type="number" required="true" scope="locale">
+                  <name>button-size</name>
+                  <label  lang="en">Arrow-Size (Pixel)</label>
+                  <label lang="de" >Pfeil-Größe (Pixel)</label>
+                  <value>25</value>
+                  <options>
+                      <minValue>0</minValue>
+                  </options>
+           </element>
+          <element type="number"  scope="locale">
+                  <name>button-margin</name>
+                  <label lang="en">Button-Margin (Pixel)</label>
+                  <label lang="de">Button-Margin (Pixel)</label>
+                  <options>
+                      <minValue>0</minValue>
+                      <defaultValue>5</defaultValue>
+                  </options>
+           </element>
+          <element type="number"  scope="locale">
+                  <name>button-radius</name>
+                  <label lang="en">Button-Radius (Pixel)</label>
+                  <label lang="de" >Button-Radius (Pixel)</label>
+                  <options>
+                      <minValue>0</minValue>
+                       <defaultValue>0</defaultValue>
+                  </options>
+
+           </element>
+            <element type="number"  scope="locale">
+                  <name>transparency-normal</name>
+                    <label lang="en" >Transparency (%)</label>
+                    <label lang="de" >Transparenz (%)</label>
+                  <options>
+                      <minValue>0</minValue>
+                      <defaultValue>100</defaultValue>
+                  </options>
+
+             </element>
+             <element type="number" scope="locale">
+                      <name>transparency-hover</name>
+                      <label lang="en">Transparency on Mouse-hover (%)</label>
+                      <label lang="de" >Transparenz bei Hover (%)</label>
+                      <options>
+                          <minValue>0</minValue>
+                          <defaultValue>100</defaultValue>
+                      </options>
+
+              </element>
+              <element type="number" scope="locale">
+                      <name>hover-animation-duration</name>
+                      <label lang="en" >Hover animation duration (miliseconds)</label>
+                      <label lang="de" >Animationsdauer bei Hover (Millisekunden)</label>
+                      <options>
+                          <minValue>0</minValue>
+                          <defaultValue>250</defaultValue>
+                      </options>
+
+               </element>
+          <element type="select"  required="true"  scope="locale">
+          <name>vertical-align</name>
+          <label lang="de">Vertikale Position</label>
+          <label lang="en">Vertical Position</label>
+          <value>bottom</value>
+            <store>
+                <option>
+                    <value>top</value>
+                    <label lang="de">Top</label>
+                    <label  lang="en" >Top</label>
+                </option>
+                <option>
+                    <value>middle</value>
+                    <label lang="en">Middle</label>
+                    <label lang="de">Middle</label>
+                </option>
+                <option>
+                    <value>bottom</value>
+                    <label lang="en">Bottom</label>
+                    <label lang="de">Bottom</label>
+                </option>
+            </store>
+          </element>
+          <element type="number"  required="true"  scope="locale">
+                <name>vertical-distance</name>
+                <label lang="en">Vertical Distance (Pixel)</label>
+                <label lang="de" >Vertikaler Abstand (Pixel)</label>
+                <value>36</value>
+                <options>
+                    <minValue>10</minValue>
+                </options>
+
+          </element>
+          <element type="select"  required="true"  scope="locale">
+              <name>horizontal-align</name>
+               <label lang="de">Horizontale Position</label>
+               <label lang="en">Horizontal Position</label>
+               <value>right</value>
+               <store>
+                  <option>
+                      <value>left</value>
+                      <label lang="de">Links</label>
+                      <label lang="en">Left</label>
+                  </option>
+                  <option>
+                      <value>right</value>
+                      <label lang="de">Rechts</label>
+                      <label lang="en">Right</label>
+                  </option>
+               </store>
+        </element>
+          <element type="number"  required="true"  scope="locale">
+              <name>horizontal-distance</name>
+              <label lang="en" >Horizontal Distance (Pixel)</label>
+              <label lang="de" >Horizontaler Abstand (Pixel)</label>
+              <value>40</value>
+              <options>
+                  <minValue>10</minValue>
+              </options>
+
+          </element>
+
+          <element type="number"  required="true"  scope="locale">
+              <name>showbutton-from</name>
+              <label lang="en" >Show Button from (Scroll-Pixel)</label>
+              <label lang="de" >Button im Footer aktivieren ab dem Pixel</label>
+              <value>40</value>
+              <options>
+                  <minValue>0</minValue>
+              </options>
+          </element>
+
+          <element type="select"  required="true"  scope="locale">
+             <name>show-on-desktop</name>
+             <label  lang="en">Show on Desktop (> 1260x)</label>
+             <label lang="de">Zeige auf Desktop (> 1260x)</label>
+             <value>yes</value>
+              <store>
+                  <option>
+                      <value>yes</value>
+                      <label lang="de">Ja</label>
+                      <label lang="en">Yes</label>
+                  </option>
+                  <option>
+                      <value>no</value>
+                      <label lang="en">No</label>
+                      <label lang="de">Nein</label>
+                  </option>
+              </store>
+          </element>
+
+          <element type="select"  required="true"  scope="locale">
+            <name>show-on-tablet-landscape</name>
+            <label lang="en" >Show on tablet landscape  (1024px - 1260px)</label>
+            <label lang="de">Zeige auf Tablet Landscape (1024px - 1260px)</label>
+            <value>yes</value>
+              <store>
+                  <option>
+                      <value>yes</value>
+                      <label lang="de">Ja</label>
+                      <label lang="en">Yes</label>
+                  </option>
+                  <option>
+                      <value>no</value>
+                      <label lang="en">No</label>
+                      <label lang="de">Nein</label>
+                  </option>
+              </store>
+         </element>
+
+          <element type="select"  required="true"  scope="locale">
+            <name>show-on-tablet-portrait</name>
+            <label>Show on tablet portrait   (768px - 1023px)</label>
+            <label lang="de">Zeige auf Tablet Portrait  (768px - 1023px)</label>
+            <value>yes</value>
+              <store>
+                  <option>
+                        <value>yes</value>
+                        <label lang="de">Ja</label>
+                        <label lang="en">Yes</label>
+                  </option>
+                  <option>
+                      <value>no</value>
+                      <label lang="en">No</label>
+                      <label lang="de">Nein</label>
+                  </option>
+              </store>
+           </element>
+  
+         
+
+         <element type="select"  required="true"  scope="locale">
+            <name>show-on-mobile-landscape</name>
+            <label>Show on mobile landscape   (420px - 767px)</label>
+            <label lang="de">Zeige auf Smartphone Landscape  (420px - 767px)</label>
+            <value>yes</value>
+              <store>
+                  <option>
+                        <value>yes</value>
+                        <label lang="de">Ja</label>
+                        <label lang="en">Yes</label>
+                  </option>
+                  <option>
+                      <value>no</value>
+                      <label lang="en">No</label>
+                      <label lang="de">Nein</label>
+                  </option>
+              </store>
+           </element>
+
+            <element type="select"  required="true"  scope="locale">
+              <name>show-on-mobile-portrait</name>
+              <label> Show on  Mobile portrait  (0 - 419px) </label>
+              <label lang="de">Zeige auf Smartphone Portrait (0 - 419px) </label>
+              <value>yes</value>
+                 <store>
+                  <option>
+                        <value>yes</value>
+                        <label lang="de">Ja</label>
+                        <label lang="en">Yes</label>
+                  </option>
+                  <option>
+                      <value>no</value>
+                      <label lang="en">No</label>
+                      <label lang="de">Nein</label>
+                  </option>
+              </store>
+                  </element>
+    </elements>
+</config>

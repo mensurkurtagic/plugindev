@@ -1,0 +1,24 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <!--subscribe js files-->
+        <service class="commeScrollToTop\Subscriber\Javascript" id="comme_scroll_to_top.subscriber.javascript">
+            <argument id="service_container" type="service"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+
+        <!--subscribe less files-->
+        <service class="commeScrollToTop\Subscriber\LessSubscriber" id="comme_scroll_to_top.subscriber.less_subscriber">
+            <argument id="service_container" type="service"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+        <!--subscribe Frontend/index files-->
+        <service class="commeScrollToTop\Subscriber\Frontend" id="comme_scroll_to_top.subscriber.frontend">
+            <argument id="service_container" type="service"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+    </services>
+</container>

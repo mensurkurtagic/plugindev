@@ -1,0 +1,53 @@
+@media ( min-width: @desktopViewportWidth) {
+    .cc-stt-floater {
+        display: @showDesktop;
+    }
+}
+@media ( min-width: @tabletLandscapeViewportWidth) and ( max-width: @desktopViewportWidth) {
+    .cc-stt-floater {
+        display: @showTabletLandscape;
+    }
+}
+@media ( min-width: @tabletViewportWidth) and ( max-width: @tabletLandscapeViewportWidth) {
+    .cc-stt-floater {
+        display: @showTabletPortrait;
+    }
+}
+@media ( min-width: @phoneLandscapeViewportWidth) and ( max-width: @tabletViewportWidth) {
+    .cc-stt-floater {
+        display: @showMobileLandscape;
+    }
+}
+@media ( max-width: @phoneLandscapeViewportWidth) {
+    .cc-stt-floater {
+        display: @showMobilePortrait;
+    }
+}
+.cc-stt-floater {
+    display: none;
+    position: fixed;
+    border-radius: @borderRadius;
+    overflow: hidden;
+    background-color: @backgroundColor;
+    opacity: @normalOpacity;
+    cursor: pointer;
+    transition: all @hoverAnimationDuration;
+    z-index: 4999;
+    svg {
+        float: right;
+        .unitize(margin, @buttonMargin);
+        padding: 0;
+        .unitize-height(@buttonSize, 16);
+        .unitize-width(@buttonSize, 16);
+        .cc-stt-arrow {
+            fill: @arrowColor;
+            transition: all @hoverAnimationDuration;
+        }
+    }
+    &:hover {
+        opacity: @hoverOpacity;
+        svg .cc-stt-arrow {
+            fill: @arrowColorHover;
+        }
+    }
+}
