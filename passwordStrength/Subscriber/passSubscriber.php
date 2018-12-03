@@ -39,7 +39,7 @@ class passSubscriber implements SubscriberInterface
 
 
         $view->addTemplateDir($this->getPluginViewDir());
-        //$view->extendsTemplate('frontend/change_order/index/shop-navigation.tpl');
+        $view->extendsTemplate('frontend/password_strength/register/personal_fieldset.tpl');
 
         //$view->assign('value', $value);
 
