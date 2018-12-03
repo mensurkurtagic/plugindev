@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/plugin.xsd">
-    <label lang="de">CC - Change Order of Blocks</label>
-    <label lang="en">CC - Change Order of Blocks</label>
+    <label lang="de">Password Strength Checker</label>
+    <label lang="en">Password Strength Checker</label>
 
     <version>1.0.0</version>
-    <copyright>Commerce Care d.o.o.</copyright>
+    <copyright></copyright>
     <license>proprietary</license>
-    <link>https://www.commercecare.de</link>
-    <author>Commerce Care d.o.o.</author>
+    <link>#</link>
+    <author></author>
     <compatibility minVersion="5.2.0"/>
 
     <changelog version="1.0.0">
-        <changes lang="de">In dieser Version können Sie die Reihenfolge der Blöcke ändern.</changes>
-        <changes lang="en">In this version you can change order of blocks.</changes>
+        <changes lang="de">First release.</changes>
+        <changes lang="en">First release.</changes>
     </changelog>
 
-    <changelog version="1.1.0">
-        <changes lang="de">In dieser Version können Sie Icons mit Farben versehen.</changes>
-        <changes lang="en">In this version you can add colors to icons.</changes>
-    </changelog>
-
-    <changelog version="1.1.1">
-        <changes lang="de">In dieser Version können Sie entscheiden, ob Sie Text neben dem Konto- und Warenkorb-Symbol anzeigen möchten.</changes>
-        <changes lang="en">In this version you can decide whether you want to show text next to the account icon and cart icon.</changes>
-    </changelog>
 </plugin>
