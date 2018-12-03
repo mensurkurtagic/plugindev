@@ -35,13 +35,17 @@ class passSubscriber implements SubscriberInterface
         $config = $this->config;
         $view->addTemplateDir($this->getPluginViewDir());
 
+        $show_hide = $config['show-checker'];
+
+        $value = 0;
+        if($show_hide) $value = 1;
 
 
 
         $view->addTemplateDir($this->getPluginViewDir());
         $view->extendsTemplate('frontend/password_strength/register/personal_fieldset.tpl');
 
-        //$view->assign('value', $value);
+        $view->assign('value', $value);
 
     }
     /**

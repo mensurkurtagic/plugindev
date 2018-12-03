@@ -3,18 +3,9 @@
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/config.xsd">
     <elements>
 
-        <element type="select"  required="true"  scope="locale">
-            <name>blocks-order</name>
-            <label lang="de">Reihenfolge der Blöcke</label>
-            <label lang="en">Blocks order</label>
-            <value>Choose from the list..</value>
-            <store>
-                <option>
-                    <value>FirstCombo</value>
-                    <label lang="en">Liked Items - My Account - Cart</label>
-                    <label lang="de">Merkzettel - Mein Konto - Warenkorb</label>
-                </option>
-            </store>
+        <element type="boolean" scope="locale" required="true">
+            <name>show-checker</name>
+            <label lang="en">Show password strength checker</label>
         </element>
 
     </elements>
